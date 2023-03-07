@@ -1,0 +1,103 @@
+name = input("What is your name? \n")
+print("Hello " + name + ".")
+studentID = input ("What is your Student ID? \n")
+print("Your ID is " + studentID + ".")
+
+--------------------------------------------------------------------------------------
+
+var1 = float(input("Enter value for var1: "))
+var2 = float(input("Enter value for var2: "))
+
+sum = var1 + var2
+diff = var1 - var2
+prod = var1 * var2
+
+print("var1 = ", var1)
+print("var2 = ", var2)
+print("sum = ", sum)
+print("diff = ", diff)
+print("prod = ", prod)
+
+--------------------------------------------------------------------------------------
+
+name = input("Enter the student name: ")
+lab_grade = float(input("Enter the lab grade: "))
+midterm_grade = float(input("Enter the midterm grade: "))
+final_grade = float(input("Enter the final grade: "))
+
+last_score = lab_grade * 0.25 + midterm_grade * 0.35 + final_grade * 0.4
+
+print("Name:", name)
+print("Lab:", lab_grade)
+print("Midterm:", midterm_grade)
+print("Final:", final_grade)
+print("Last Score:", last_score)
+
+--------------------------------------------------------------------------------------
+
+print("*\n**\n***\n**\n*")
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"What is your name?"<<endl;
+    string name;
+    cin>>name;
+    cout<<"Hello "<<name<<"."<<endl;
+
+    cout<<"What is your Student ID?"<<endl;
+    string studentID;
+    cin>>studentID;
+    cout<<"Your ID is "<<studentID<<"."<<endl;
+
+--------------------------------------------------------------------------------------
+
+    double var1, var2;
+    double sum, diff, prod;
+
+    cout << "Enter the value of var1: ";
+    cin >> var1;
+    cout << "Enter the value of var2: ";
+    cin >> var2;
+
+    sum = var1 + var2;
+    diff = var1 - var2;
+    prod = var1 * var2;
+
+    cout << "var1 = " << var1 << endl;
+    cout << "var2 = " << var2 << endl;
+    cout << "Sum = " << sum << endl;
+    cout << "Difference = " << diff << endl;
+    cout << "Product = " << prod << endl;
+    
+--------------------------------------------------------------------------------------
+    
+    string name;
+    double lab_grade, midterm_grade, final_grade, last_score;
+
+    cout << "Enter the name of the student: ";
+    getline(cin, name);
+    cout << "Enter the lab grade: ";
+    cin >> lab_grade;
+    cout << "Enter the midterm grade: ";
+    cin >> midterm_grade;
+    cout << "Enter the final grade: ";
+    cin >> final_grade;
+
+    last_score = 0.25 * lab_grade + 0.35 * midterm_grade + 0.4 * final_grade;
+
+    cout << "Name: " << name << endl;
+    cout << "Lab: " << lab_grade << endl;
+    cout << "Midterm: " << midterm_grade << endl;
+    cout << "Final: " << final_grade << endl;
+    cout << "Last Score: " << last_score << endl;
+    
+--------------------------------------------------------------------------------------
+    
+    cout << "*\n**\n***\n**\n*\n";
+    
+    return 0;
+}
